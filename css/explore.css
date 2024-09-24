@@ -1,0 +1,88 @@
+/* Explore Page Styles */
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF; /* Matching white from the logo */
+    color: #333; /* Neutral dark text */
+}
+
+/* Header and Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #00C7E6; /* Teal background for the header */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding shadow for a subtle effect */
+}
+
+.brand-logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF; /* White text on teal background */
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #FFC300; /* Golden yellow hover effect */
+    color: #000; /* Black text on hover */
+}
+main{
+    background: url(../image/unspic3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.explore-section {
+    padding: 40px 20px;
+    background-color: #FFFFFF; /* Clean white background */
+    color: #333;
+}
+
+.explore-section h1 {
+    font-size: 2.5rem;
+    color: #EC008C; /* Magenta heading */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.explore-section p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.explore-section ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.explore-section ul li {
+    background-color: #F9F9F9; /* Light background for items */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s ease;
+}
+
+.explore-section ul li:hover {
+    background-color: #FFC300; /* Golden hover effect */
+    color: #000;
+}

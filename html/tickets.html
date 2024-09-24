@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/tickets.css">
+    <script src="../java script/tickets.js" defer></script> <!-- Link to the JavaScript file -->
+    <title>Ticket Booking</title>
+</head>
+<body>
+    <header>
+        <section class="brand-logo">
+            <img src="images/logo.png" alt="museum-logo">
+        </section>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="explore.html">EXPLORE</a></li>
+                <li><a href="info.html">INFO</a></li>
+                <li><a href="tickets.html">TICKETS</a></li>
+                <li><a href="store.html">STORE</a></li>
+                <li><a href="follow.html">FOLLOW US</a></li>
+                <li><a href="support.html">SUPPORT US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Ticket Booking Section -->
+        <section class="ticket-section">
+            <h1>Book Your Tickets</h1>
+            <form class="ticket-form" id="ticketForm">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="ticketType">Ticket Type</label>
+                <select id="ticketType" name="ticketType" required>
+                    <option value="">Select a ticket</option>
+                    <option value="standard">Standard - $20</option>
+                    <option value="student">Student - $15</option>
+                    <option value="senior">Senior - $18</option>
+                </select>
+
+                <input type="submit" value="Book Ticket">
+            </form>
+
+            <div id="confirmationMessage" style="display:none; margin-top: 20px;">
+                <p>Your ticket has been booked successfully!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Eve's Art Museum. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

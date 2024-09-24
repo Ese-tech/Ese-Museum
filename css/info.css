@@ -1,0 +1,26 @@
+/* Info Page Styles */
+.info-section {
+    padding: 40px;
+    background-color: #EC008C; /* Magenta background */
+    color: #FFFFFF; /* White text */
+    text-align: center;
+}
+
+.info-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.info-section ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+.info-section ul li {
+    margin: 15px 0;
+}
+
+.info-section ul li:hover {
+    color: #FFC300; /* Golden yellow hover effect */
+}

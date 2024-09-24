@@ -1,0 +1,102 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #ff7f50;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Info Section */
+.info-section {
+    margin: 40px;
+}
+
+.info-section h1, .info-section h2 {
+    color: #ff7f50;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+table th {
+    background-color: #ff7f50;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Inquiry Form */
+.inquiry-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.inquiry-form label {
+    margin: 10px 0 5px;
+}
+
+.inquiry-form input, .inquiry-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.inquiry-form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.inquiry-form button:hover {
+    background-color: #ff5722;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #ff7f50;
+    color: white;
+    padding: 10px;
+}
