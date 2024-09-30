@@ -43,6 +43,11 @@ body {
     /* Info Section */
     .info-section {
       margin: 40px;
+      background-color: #e4d3bd; 
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+      transition: background-color 0.3s ease;
 
       h1,
       h2 {
@@ -50,11 +55,12 @@ body {
       }
       .social-media-links i {
         color: rgb(0, 199, 230);
+        
       }
       .inquiry-form {
         display: flex;
         flex-direction: column;
-
+      
         label {
           margin: 10px 0 5px;
         }

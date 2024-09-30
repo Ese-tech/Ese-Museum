@@ -40,7 +40,7 @@ body {
   main {
     height: 55vh;
     padding: 20px;
-    margin-top: 85px;
+    margin: 20px;
 
     .info-section {
       height: 400px;
@@ -77,10 +77,11 @@ body {
 
     font-size: smaller;
 
+    a,
     i {
       margin: 10px;
       font-size: 20px;
-
+      text-decoration: none;
       color: rgb(252, 135, 100);
     }
   }

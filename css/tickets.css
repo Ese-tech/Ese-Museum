@@ -5,142 +5,127 @@ body {
   padding: 0;
   background-color: #ffffff; /* Matching white from the logo */
   color: #333; /* Neutral dark text */
-}
 
-/* Header and Navigation */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #00c7e6; /* Teal background for the header */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding shadow for a subtle effect */
-}
-
-.brand-logo img {
-  height: 50px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-
-  li a {
-    text-decoration: none;
-    color: #ffffff; /* White text on teal background */
-    font-weight: bold;
-    padding: 10px;
-    border-radius: 5px;
-  }
-  li a:hover {
-    background-color: #ffc300; /* Golden yellow hover effect */
-    color: #000; /* Black text on hover */
-  }
-}
-
-/* Ticket Page Styles */
-.ticket-section {
-  padding: 50px;
-  background-color: #ffffff; /* White background */
-  color: #333;
-  text-align: center;
-  h2 {
-    font-size: 2.5rem;
-    color: rgb(252, 135, 100); /* Deep blue heading */
-
-    .ticket-form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      max-width: 700px;
-      margin: 0 auto;
-    }
-    margin-bottom: 30px;
-  }
-
-  fieldset {
-    width: 100%;
-    height: 500px;
-    margin: auto;
+  /* Header and Navigation */
+  header {
     display: flex;
-    flex-direction: column;
-    gap: 10px 100px;
-    border: 5px solid rgb(252, 135, 100);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #00c7e6; /* Teal background for the header */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding shadow for a subtle effect */
 
-    legend {
-      font-size: 24px;
-      margin-bottom: 10px;
-      padding-left: 10px;
-      position: relative;
+    .brand-logo img {
+      height: 50px;
     }
 
-    legend::after {
-      content: "";
-      display: block;
-      width: auto;
-      height: 2px;
-      background-color: rgb(252, 135, 100);
-      margin: 5px auto 0 auto;
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+
+      li a {
+        text-decoration: none;
+        color: #ffffff; /* White text on teal background */
+        font-weight: bold;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      li a:hover {
+        background-color: #ffc300; /* Golden yellow hover effect */
+        color: #000; /* Black text on hover */
+      }
     }
   }
-}
+  main {
+    /* Ticket Page Styles */
+    .ticket-section {
+      padding: 50px;
+      background-color: #ffffff; /* White background */
+      color: #333;
+      text-align: center;
+      /* Confirmation message styling */
+      #confirmationMessage p {
+        font-size: 1.2rem;
+        color: #00c7e6; /* Teal color for success message */
+      }
 
-.ticket-form input[type="text"],
-.ticket-form input[type="email"],
-.ticket-form select {
-  padding: 10px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
+      .ticket-form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        max-width: 700px;
+        margin: 0 auto;
 
-.ticket-form input[type="submit"] {
-  margin-left: 25px;
-  background-color: #00c7e6; /*  submit button */
-  color: #fff;
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-}
+        fieldset {
+          width: 100%;
+          height: 500px;
+          margin: auto;
+          display: flex;
+          flex-direction: column;
+          gap: 10px 100px;
+          border: 5px solid rgb(252, 135, 100);
 
-.ticket-form input[type="submit"]:hover {
-  background-color: #ffc300;
-  color: #000;
-}
+          legend {
+            font-size: 24px;
+            margin-bottom: 10px;
+            padding-left: 10px;
+            position: relative;
+            h2 {
+              font-size: 2.5rem;
+              color: rgb(252, 135, 100); /* Deep blue heading */
+              margin-bottom: 30px;
+            }
+          }
 
-/* Confirmation message styling */
-#confirmationMessage p {
-  font-size: 1.2rem;
-  color: #00c7e6; /* Teal color for success message */
-}
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: gainsboro; /* Deep blue footer background */
+          legend::after {
+            content: "";
+            display: block;
+            width: auto;
+            height: 2px;
+            background-color: rgb(252, 135, 100);
+            margin: 5px auto 0 auto;
+          }
+        }
+      }
 
-  font-size: smaller;
-
-  i {
-    margin: 10px;
-    font-size: 20px;
-
-    color: rgb(252, 135, 100);
+      input[type="text"],
+      input[type="email"],
+      select {
+        padding: 10px;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      input[type="submit"] {
+        margin-left: 25px;
+        background-color: #00c7e6; /*  submit button */
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      input[type="submit"]:hover {
+        background-color: #ffc300;
+        color: #000;
+      }
+    }
   }
-}
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: gainsboro; /* Deep blue footer background */
 
-  font-size: smaller;
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: gainsboro; /* Deep blue footer background */
 
-  a,
-  i {
-    margin: 10px;
-    font-size: 20px;
-    text-decoration: none;
-    color: rgb(252, 135, 100);
+    font-size: smaller;
+
+    a,
+    i {
+      margin: 10px;
+      font-size: 20px;
+      text-decoration: none;
+      color: rgb(252, 135, 100);
+    }
   }
 }
 
