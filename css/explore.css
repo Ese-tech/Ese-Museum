@@ -15,7 +15,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #00C7E6; /* Teal background for the header */
+    background-color: rgb(0, 199, 230); /* Teal background for the header */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding shadow for a subtle effect */
 }
 
@@ -54,7 +54,7 @@ main{
 
 .explore-section h1 {
     font-size: 2.5rem;
-    color: #EC008C; /* Magenta heading */
+    color:   rgb(252, 135, 100); /* Magenta heading */
     text-align: center;
     margin-bottom: 30px;
 }
@@ -70,10 +70,14 @@ main{
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     list-style: none;
+    text-decoration: none;
     padding: 0;
     text-align: center;
 }
-
+ a{
+    text-decoration: none;
+    
+}
 .explore-section ul li {
     background-color: #F9F9F9; /* Light background for items */
     padding: 20px;
@@ -85,4 +89,33 @@ main{
 .explore-section ul li:hover {
     background-color: #FFC300; /* Golden hover effect */
     color: #000;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: gainsboro; /* Deep blue footer background */
+   
+    font-size: smaller;
+
+    i{
+        margin:10px;
+        font-size: 20px;
+       
+        color: rgb(252, 135, 100);;
+       
+    }
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .welcome-section h1 {
+        font-size: 2rem;
+    }
 }

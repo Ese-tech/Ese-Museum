@@ -55,7 +55,7 @@ fieldset {
     display: flex;
     flex-direction: column;
     gap: 10px 100px;
-    border: 3px solid gainsboro;
+    border: 3px solid  rgb(252, 135, 100);
 
     legend {
       font-size: 24px;
@@ -69,14 +69,14 @@ fieldset {
       display: block;
       width: auto;
       height: 2px;
-      background-color: hotpink;
+      background-color:  rgb(252, 135, 100);
       margin: 5px auto 0 auto;
     }
 }
 
 .ticket-section h2 {
     font-size: 2.5rem;
-    color: rgb(245, 0, 172); /* Deep blue heading */
+    color:  rgb(252, 135, 100); /* Deep blue heading */
     margin-bottom: 30px;
 }
 
@@ -116,4 +116,48 @@ fieldset {
 #confirmationMessage p {
     font-size: 1.2rem;
     color: #00C7E6; /* Teal color for success message */
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: gainsboro; /* Deep blue footer background */
+   
+    font-size: smaller;
+
+    i{
+        margin:10px;
+        font-size: 20px;
+       
+        color:  rgb(252, 135, 100);
+       
+    }
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: gainsboro; /* Deep blue footer background */
+   
+    font-size: smaller;
+
+    i{
+        margin:10px;
+        font-size: 20px;
+       
+        color: rgb(252, 135, 100);;
+       
+    }
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .welcome-section h1 {
+        font-size: 2rem;
+    }
 }

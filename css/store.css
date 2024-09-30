@@ -1,56 +1,117 @@
 /* Store Page Styles */
-.store-section {
-    padding: 50px;
-    background-color: #FFFFFF; /* White background */
-}
-
-.store-section h1 {
-    font-size: 2.5rem;
-    color: #EC008C; /* Magenta heading */
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-}
-
-.product-card {
-    background-color: #F9F9F9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.product-card img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.product-card h2 {
-    font-size: 1.5rem;
-    color: #4300F5; /* Deep blue for product names */
-}
-
-.product-card p {
-    font-size: 1rem;
-    color: #666;
-}
-
-.product-card button {
-    background-color: #00C7E6;
-    color: #FFF;
+/* General styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff; /* Matching white from the logo */
+  color: #333; /* Neutral dark text */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    background-color: #00c7e6; /* Teal background for the header */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding shadow for a subtle effect */
+    .brand-logo img {
+      height: 50px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      li a {
+        text-decoration: none;
+        color: #ffffff; /* White text on teal background */
+        font-weight: bold;
+        padding: 10px;
+        border-radius: 5px;
+        :hover {
+          background-color: #ffc300; /* Golden yellow hover effect */
+          color: #000; /* Black text on hover */
+        }
+      }
+    }
+  }
+
+  main {
+    .store-section {
+      padding: 50px;
+      background-color: #ffffff; /* White background */
+
+      h1 {
+        font-size: 2.5rem;
+        color: rgb(252, 135, 100); /* Magenta heading */
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+
+        .product-card {
+          background-color: #f9f9f9;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          text-align: center;
+
+          img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+          }
+          h2 {
+            font-size: 1.5rem;
+            color: rgb(252, 135, 100); /* Deep blue for product names */
+          }
+          p {
+            font-size: 1rem;
+            color: #666;
+          }
+          button {
+            background-color: #00c7e6;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+          button:hover {
+            background-color: #ffc300; /* Golden hover */
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: gainsboro; /* Deep blue footer background */
+
+    font-size: smaller;
+
+    a,
+    i {
+      margin: 10px;
+      font-size: 20px;
+      text-decoration: none;
+      color: rgb(252, 135, 100);
+    }
+  }
 }
 
-.product-card button:hover {
-    background-color: #FFC300; /* Golden hover */
-    color: #000;
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .welcome-section h1 {
+    font-size: 2rem;
+  }
 }
