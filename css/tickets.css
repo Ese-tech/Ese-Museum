@@ -1,61 +1,72 @@
-
 /* General styles */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #FFFFFF; /* Matching white from the logo */
-    color: #333; /* Neutral dark text */
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff; /* Matching white from the logo */
+  color: #333; /* Neutral dark text */
 }
 
 /* Header and Navigation */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #00C7E6; /* Teal background for the header */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding shadow for a subtle effect */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #00c7e6; /* Teal background for the header */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding shadow for a subtle effect */
 }
 
 .brand-logo img {
-    height: 50px;
+  height: 50px;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
+  list-style: none;
+  display: flex;
+  gap: 20px;
 
-nav ul li a {
+  li a {
     text-decoration: none;
-    color: #FFFFFF; /* White text on teal background */
+    color: #ffffff; /* White text on teal background */
     font-weight: bold;
     padding: 10px;
     border-radius: 5px;
-}
-
-nav ul li a:hover {
-    background-color: #FFC300; /* Golden yellow hover effect */
+  }
+  li a:hover {
+    background-color: #ffc300; /* Golden yellow hover effect */
     color: #000; /* Black text on hover */
+  }
 }
 
 /* Ticket Page Styles */
 .ticket-section {
-    padding: 50px;
-    background-color: #FFFFFF; /* White background */
-    color: #333;
-    text-align: center;
-}
-fieldset {
+  padding: 50px;
+  background-color: #ffffff; /* White background */
+  color: #333;
+  text-align: center;
+  h2 {
+    font-size: 2.5rem;
+    color: rgb(252, 135, 100); /* Deep blue heading */
+
+    .ticket-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    margin-bottom: 30px;
+  }
+
+  fieldset {
     width: 100%;
     height: 500px;
     margin: auto;
     display: flex;
     flex-direction: column;
     gap: 10px 100px;
-    border: 3px solid  rgb(252, 135, 100);
+    border: 5px solid rgb(252, 135, 100);
 
     legend {
       font-size: 24px;
@@ -69,95 +80,78 @@ fieldset {
       display: block;
       width: auto;
       height: 2px;
-      background-color:  rgb(252, 135, 100);
+      background-color: rgb(252, 135, 100);
       margin: 5px auto 0 auto;
     }
-}
-
-.ticket-section h2 {
-    font-size: 2.5rem;
-    color:  rgb(252, 135, 100); /* Deep blue heading */
-    margin-bottom: 30px;
-}
-
-.ticket-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 700px;
-    margin: 0 auto;
+  }
 }
 
 .ticket-form input[type="text"],
 .ticket-form input[type="email"],
 .ticket-form select {
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #CCC;
-    border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .ticket-form input[type="submit"] {
-    margin-left:25px ;
-    background-color: #00C7E6; /*  submit button */
-    color: #FFF;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-   
+  margin-left: 25px;
+  background-color: #00c7e6; /*  submit button */
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .ticket-form input[type="submit"]:hover {
-    background-color: #FFC300; 
-    color: #000;
+  background-color: #ffc300;
+  color: #000;
 }
 
 /* Confirmation message styling */
 #confirmationMessage p {
-    font-size: 1.2rem;
-    color: #00C7E6; /* Teal color for success message */
+  font-size: 1.2rem;
+  color: #00c7e6; /* Teal color for success message */
 }
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: gainsboro; /* Deep blue footer background */
-   
-    font-size: smaller;
+  text-align: center;
+  padding: 20px;
+  background-color: gainsboro; /* Deep blue footer background */
 
-    i{
-        margin:10px;
-        font-size: 20px;
-       
-        color:  rgb(252, 135, 100);
-       
-    }
+  font-size: smaller;
+
+  i {
+    margin: 10px;
+    font-size: 20px;
+
+    color: rgb(252, 135, 100);
+  }
 }
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: gainsboro; /* Deep blue footer background */
-   
-    font-size: smaller;
+  text-align: center;
+  padding: 20px;
+  background-color: gainsboro; /* Deep blue footer background */
 
-    i{
-        margin:10px;
-        font-size: 20px;
-       
-        color: rgb(252, 135, 100);;
-       
-    }
+  font-size: smaller;
+
+  a,
+  i {
+    margin: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(252, 135, 100);
+  }
 }
-
-
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-    
-    .welcome-section h1 {
-        font-size: 2rem;
-    }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .welcome-section h1 {
+    font-size: 2rem;
+  }
 }

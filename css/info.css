@@ -1,5 +1,6 @@
 /* General styles */
 body {
+  height: 100vh;
   font-family: "Arial", sans-serif;
   margin: 0;
   padding: 0;
@@ -37,10 +38,14 @@ body {
     }
   }
   main {
+    height: 55vh;
     padding: 20px;
+    margin-top: 85px;
 
     .info-section {
-      padding: 40px;
+      height: 400px;
+      font-size: 30px;
+      padding: 50px;
       background-color: rgb(252, 135, 100); /* Magenta background */
       color: #ffffff; /* White text */
       text-align: center;

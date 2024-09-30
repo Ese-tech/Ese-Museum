@@ -1,6 +1,7 @@
 /* Store Page Styles */
 /* General styles */
 body {
+  height: 100vh;
   font-family: "Arial", sans-serif;
   margin: 0;
   padding: 0;
@@ -36,6 +37,7 @@ body {
   }
 
   main {
+    height: 80vh;
     .store-section {
       padding: 50px;
       background-color: #ffffff; /* White background */

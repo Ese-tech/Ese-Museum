@@ -1,7 +1,8 @@
 /* Explore Page Styles */
 
 
-body {
+body {  border: 5px solid rgb(128, 0, 0);
+    height: 100vh;
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -42,9 +43,7 @@ nav ul li a:hover {
     color: #000; /* Black text on hover */
 }
 main{
-    background: url(../image/unspic3.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+
 }
 .explore-section {
     padding: 40px 20px;
@@ -91,10 +90,11 @@ main{
     color: #000;
 }
 footer {
+    border: 2px solid green;
     text-align: center;
     padding: 20px;
     background-color: gainsboro; /* Deep blue footer background */
-   
+    margin-bottom: 0;
     font-size: smaller;
 
     i{
