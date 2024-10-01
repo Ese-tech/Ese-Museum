@@ -6,8 +6,6 @@
     padding: 0;
     background-color: #ffffff;
     color: #333;
-  }
-}
 
 header {
   display: flex;
@@ -29,6 +27,14 @@ header {
       color: #ffffff;
       font-weight: bold;
       padding: 10px;
+       
+      i {
+        padding: 10px;
+        color: #333;
+      }
+   
+
+      
     }
     li a:hover {
       background-color: #ffc300; /* Golden yellow hover effect */
@@ -36,6 +42,9 @@ header {
     }
   }
 }
+  }
+}
+
 
 main {
   width: 100%;
@@ -186,8 +195,11 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
   nav ul {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 10px;
+    justify-content: center;
+    display: none;
   }
 
   .welcome-section h1 {

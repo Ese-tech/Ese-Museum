@@ -21,16 +21,26 @@ header {
   .brand-logo img {
     height: 50px;
   }
+
   nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
+
     li a {
       text-decoration: none;
       color: #ffffff;
       font-weight: bold;
       padding: 10px;
+
+      i {
+        padding: 10px;
+        color: #333;
+      }
+   
+
     }
+
     li a:hover {
       background-color: #ffc300; /* Golden yellow hover effect */
       color: #000;

@@ -31,6 +31,12 @@ body {
       font-weight: bold;
       padding: 10px;
       border-radius: 5px;
+
+      i {
+        padding: 10px;
+        color: #333;
+      }
+   
     }
 
     nav ul li a:hover {

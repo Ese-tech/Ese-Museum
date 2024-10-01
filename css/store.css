@@ -7,6 +7,7 @@ body {
   padding: 0;
   background-color: #ffffff; /* Matching white from the logo */
   color: #333; /* Neutral dark text */
+
   header {
     display: flex;
     justify-content: space-between;
@@ -22,17 +23,26 @@ body {
       list-style: none;
       display: flex;
       gap: 20px;
+
       li a {
         text-decoration: none;
         color: #ffffff; /* White text on teal background */
         font-weight: bold;
         padding: 10px;
         border-radius: 5px;
-        :hover {
+
+        i {
+          padding: 10px;
+          color: #333;
+        }
+     
+
+       
+      }
+       :hover {
           background-color: #ffc300; /* Golden yellow hover effect */
           color: #000; /* Black text on hover */
         }
-      }
     }
   }
 

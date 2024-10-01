@@ -27,12 +27,19 @@ body {
         list-style: none;
         display: flex;
         gap: 20px;
+
+
          li a {
         text-decoration: none;
         color: #FFFFFF; 
         font-weight: bold;
         padding: 10px; 
        
+        i {
+          padding: 10px;
+          color: #333;
+        }
+     
     } 
     li a:hover {
         background-color: #FFC300; /* Golden yellow hover effect */

@@ -30,7 +30,14 @@ body {
         font-weight: bold;
         padding: 10px;
         border-radius: 5px;
+
+        i {
+          padding: 10px;
+          color: #333;
+        }
+     
       }
+
       li a:hover {
         background-color: #ffc300; /* Golden yellow hover effect */
         color: #000; /* Black text on hover */
