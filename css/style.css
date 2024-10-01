@@ -5,6 +5,7 @@ body {
   padding: 0;
   background-color: #ffffff; /* Matching white from the logo */
   color: #333; /* Neutral dark text */
+  
   header {
     display: flex;
     justify-content: space-between;
@@ -90,7 +91,8 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
   nav ul {
-    flex-direction: column;
+    flex-direction:row;
+    display: block;
     gap: 10px;
   }
 
